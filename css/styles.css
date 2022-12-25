@@ -5,7 +5,6 @@
 --accent-color: #4D5AE5;
 --primary-background-color:#FFFFFF;
 --secondary-background-color: #2E2F42;
---primary-color-button: #FFFFFF;
 }
 body {
 margin: 0;
@@ -145,7 +144,7 @@ text-align: center;
 font-size: 56px;
 line-height: 1.07;
 font-weight: 600;
-color: #FFFFFF;
+color: var(--primary-background-color);
 margin: 0 auto 48px auto;
 width: 492px;
 }
@@ -154,7 +153,7 @@ font-family: Roboto, san-serif;
 font-weight: 600;
 font-size: 16px;
 line-height: 1.19;
-color: var(--primary-color-button);
+color: var(--primary-background-color);
 background-color: #4D5AE5;
 cursor: pointer;
 
@@ -187,7 +186,6 @@ align-items: center;
 width: 264px;
 height: 112px;
 background-color: #F4F4FD;
-padding: 24px 100px 24px 100px;
 margin-bottom: 8px;
 }
 .title-advantages-list {
@@ -279,17 +277,13 @@ background-color: #404BBF;
 .icon-media-card {
 fill: currentColor;
 }
-.section.customers {
-margin-top: 120px;
-margin-bottom: 120px;
-padding: 0;
-}
+
 .title-customers {
 color: var(--title-text-color);
 font-weight: 700;
 font-size: 36px;
 line-height: 1.17;
-padding-bottom: 72px;
+margin-bottom: 72px;
 text-align: center;
 }
 .icons-customers-list {
@@ -304,17 +298,20 @@ justify-content: center;
 align-items: center;
 width: 168px;
 height: 88px;
-background-color: #F4F4FD;
+background-color: var(--primary-background-color);
 }
 
 .customer-link {
 width: 100%;
 height: 100%;
-padding: 16px 32px;
+display: flex;
+justify-content: center;
+align-items: center;
 color: #8E8F99;
 box-shadow: 0px 0px 4px #40000000;
 border-radius: 4px;
 border: 1px solid #8E8F99;
+
 }
 .customer-link:hover,
 .customer-link:focus {
@@ -326,6 +323,7 @@ fill: currentColor;
 }
 .bottom-part {
 padding: 32px 16px;
+background-color: var(--primary-background-color);
 }
 .footer {
 background-color: var(--secondary-background-color);
@@ -340,7 +338,7 @@ line-height: 1.5;
 width: 264px;
 }
 .title-social-media {
-color: #FFFFFF;
+color: var(--primary-background-color);
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
@@ -373,7 +371,7 @@ padding: 0;
 display: inline-flex;
 justify-content: center;
 align-items: center;
-color: #FFFFFF;
+color: var(--primary-background-color);
 border-radius: 50%;
 border: none;
 background-color: #434455;
@@ -414,7 +412,7 @@ cursor: pointer;
 padding: 8px 16px;
 }
 .filter-button:focus {
-color: var(--primary-color-button);
+color: var(--primary-background-color);
 background-color: var(--accent-color);
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 border-radius: 4px;
@@ -436,7 +434,6 @@ height: 420px;
 }
 
 .project-card-link {
-border: 1px solid #E7E9FC;
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
