@@ -411,6 +411,7 @@ line-height: 1.5;
 cursor: pointer;
 padding: 8px 16px;
 }
+.filter-button:hover,
 .filter-button:focus {
 color: var(--primary-background-color);
 background-color: var(--accent-color);
@@ -433,16 +434,10 @@ width: 360px;
 height: 420px;
 }
 
-.project-card-link {
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-
-.project-card-link:hover, 
-.project-card-link:focus {
+.project-card-item:hover, 
+.project-card-item:focus {
 border: 0.5px solid #F4F4FD;
-border-color: #E7E9FC;
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-
 }
 
 .project-title {
@@ -462,7 +457,8 @@ text-decoration: none;
 .buttom-part-card {
 padding-right:0;
 padding-left: 16px;
-border: 0.5px solid #F4F4FD;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+border: 1px solid #E7E9FC;
 padding-top: 32px;
 padding-bottom: 32px;
 }
